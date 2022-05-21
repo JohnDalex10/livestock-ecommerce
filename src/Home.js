@@ -6,6 +6,9 @@ function Home() {
     <div className="">
     <div className="font-serif h-12 w-7 border-2 border-black absolute left-2/4 bottom-0 rounded-2xl cursor-pointer before:absolute before:left-2/4 before:border-2 before:border-black before:w-2.5 before:h-2.5  after:absolute after:left-2/4 after:border-2 after:border-black after:h-2.5 after:w-2.5 transform before:rotate-45"></div>
 
+    <div className="text-white text-center w-full font-serif font-bold text-2xl p-2 bg-red-900 mt-2 ">
+        PRODUCT SECTION
+    </div>
       <div className="flex z-1 ml-1.5 mr-1.5">
         <Product
           title="Chicken: contains animal protein, can be prepared in different forms such as fried, grilled e.t.c."

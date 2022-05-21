@@ -36,8 +36,8 @@ const Slider = () => {
 
     return (
         <div className="w-full h-full max-h-1500">
-            <AiOutlineArrowLeft className="bg-zinc-700 text-white w-7 h-7 cursor-pointer rounded absolute z-999 hover:bg-white hover:text-zinc-700 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 top-1/2 left-4" onClick={prevSlide}/>
-            <AiOutlineArrowRight className="bg-zinc-700 text-white w-7 h-7 cursor-pointer rounded absolute z-999 hover:bg-white hover:text-zinc-700 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 top-1/2 right-4" onClick={nextSlide}/>
+            <AiOutlineArrowLeft className="bg-black absolute text-white w-7 h-7 cursor-pointer rounded-lg absolute z-999 hover:bg-white hover:text-zinc-700 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 top-1/2 left-4" onClick={prevSlide}/>
+            <AiOutlineArrowRight className="bg-black text-white w-7 h-7 cursor-pointer rounded-lg absolute z-999 hover:bg-white hover:text-zinc-700 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 top-1/2 right-4" onClick={nextSlide}/>
 
             {sliderData.map((slide, index) => {
                 return (
@@ -45,7 +45,7 @@ const Slider = () => {
                         {index === currentSlide && (
                             <>
                                 <img src={slide.image} alt="slide" className="w-full sm:w-full h-full" ></img>
-                                <div className="font-serif absolute top-96 left-20 w-1/2 p-12 bg-gray-900 animate-slide">
+                                <div className="font-serif absolute top-96 left-20 w-1/2 p-12 bg-black animate-slide">
                                     <h2 className="text-white mb-4 text-3xl font-bold">{slide.heading}</h2>
                                     <p className="text-white mb-4">{slide.desc}</p>
                                     <hr className="h-0.5 bg-white"/>

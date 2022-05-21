@@ -39,10 +39,10 @@ function Login() {
         <h1 className="text-3xl font-bold mb-5 text-center">Sign In</h1>
 
         <form>
-          <h5 className="mb-1 font-semibold">E-mail</h5>
+          <h5 className="mb-1 font-semibold font-serif">E-mail:</h5>
           <input className="bg-gray-400 mb-2.5 w-full h-8" type="email" value={email} onChange={e => setEmail(e.target.value)} required></input>
 
-          <h5 className="mb-1 font-semibold">Password</h5>
+          <h5 className="mb-1 font-semibold font-serif">Password:</h5>
           <input className="bg-gray-400 mb-2.5 w-full h-8" type="password" value={password} onChange={e => setPassword(e.target.value)} required></input>
 
           <button onClick={signIn} type="submit" className="bg-sky-300 hover:bg-green-500 font-bold rounded w-full border-none p-2.5 my-3  hover:translate-y-1 hover:scale-100 transiton hover:transition-all ease-in-out duration-300">Sign In</button>

@@ -21,13 +21,13 @@ function CheckoutProduct({ id, image, title, price, rating }) {
           <small>₦</small>
           <strong>{price}</strong>
         </p>
-        <div className="flex">
+        {/* <div className="flex">
           {Array(rating)
             .fill()
             .map((_, i) => (
               <p>⭐</p>
             ))}
-        </div>
+        </div> */}
         <button
           onClick={removeFromCart}
           className="mt-2.5 mb-2.5 transition ease-in-out delay-100 font-semibold text-white py-2 px-3 hover:translate-y-1 hover:scale-105 bg-sky-600 border-none w-1/2 p-4 hover:text-white hover:bg-red-500 hover:shadow-2xl duration-300"

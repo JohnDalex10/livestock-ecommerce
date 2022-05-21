@@ -18,10 +18,14 @@ function App() {
         // user just logged in or was logged in
         dispatch({
           type: 'SET_USER',
-          
+          user: authUser
         })
       } else {
         //user logged out
+        dispatch({
+          type: 'SET_USER',
+          user: null
+        })
       }
     })
   }, [])
